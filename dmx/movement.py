@@ -4,6 +4,7 @@ import relative
 
 def level1():
     turret = relative.RelativeControl()
+    turret.start()
 
     turret.set_x(128)
     turret.send()
@@ -21,11 +22,13 @@ def level1():
     turret.send()
     sleep(1)
 
+    turret.stop()
     # test: by now, the turret should be back to its original position
 
 
 def level2():
     turret = relative.RelativeControl()
+    turret.start()
 
     turret.set_y(128)
     turret.send()
@@ -43,11 +46,13 @@ def level2():
     turret.send()
     sleep(1)
 
+    turret.stop()
     # test: by now, the turret should be back to its original position
 
 
 def level3():
     turret = relative.RelativeControl()
+    turret.start()
 
     turret.set_x(128)
     turret.set_y(128)
@@ -69,6 +74,7 @@ def level3():
     turret.send()
     sleep(1)
 
+    turret.stop()
     # test: by now, the turret should be back to its original position
 
 

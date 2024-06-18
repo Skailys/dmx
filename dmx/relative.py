@@ -1,4 +1,4 @@
-from dmx import DMX_Serial
+from dmx.dmx import DMX_Serial
 
 
 class RelativeControl(DMX_Serial):
@@ -75,6 +75,12 @@ class RelativeControl(DMX_Serial):
 
     def send(self):
         self.set_data(self.get_data())
+
+    def start(self):
+        super().start()
+
+    def stop(self):
+        super().stop()
 
 def overflow_add(a, b, max_value):
     return (a + b) % max_value

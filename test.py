@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import time
-import dmx
+import dmx.dmx as dmx
 
 sender = dmx.DMX_Serial()
 sender.start()
