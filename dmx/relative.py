@@ -21,7 +21,7 @@ class RelativeControl(DMX_Serial):
         self.xtrim = 0
         self.y = 0
         self.ytrim = 0
-        self.xy_speed = 0
+        self.xy_speed = 20
 
         super().__init__()
 
