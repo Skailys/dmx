@@ -1,4 +1,4 @@
-from dmx.dmx import DMX_Serial
+from dmx import DMX_Serial
 
 
 class RelativeControl(DMX_Serial):
