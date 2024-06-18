@@ -3,7 +3,7 @@ import relative
 
 
 def level1():
-    turret = relative.RelativeControl()
+    turret = relative.RelativeControl(offset=1)
     turret.start()
 
     turret.set_x(128)
@@ -27,7 +27,7 @@ def level1():
 
 
 def level2():
-    turret = relative.RelativeControl()
+    turret = relative.RelativeControl(offset=1)
     turret.start()
 
     turret.set_y(128)
@@ -51,7 +51,7 @@ def level2():
 
 
 def level3():
-    turret = relative.RelativeControl()
+    turret = relative.RelativeControl(offset=1)
     turret.start()
 
     turret.set_x(128)
